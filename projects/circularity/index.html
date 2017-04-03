@@ -89,21 +89,29 @@
                         circle = circles[i];
                         
                         // TODO 5 : Update the circles position //
-                        physikz.updatePosition(circle)
+                        physikz.updatePosition(circle);
 
                         
                         // TODO 6 : YOUR CODE STARTS HERE //////////////////////
                         
-                        if (circle.x > canvas.width + circle.radius) {
-                            // your code to place circle exactly off the stage at the left-side //
+                        //X  Direction  Below//
+                        
+                        if ( circle.x > canvas.width + circle.radius ) {
+                            //appear at left
+                            circle.x = 0;
                         } else if (circle.x < canvas.width + circle.radius) {
-                            // your code to place circle exactly off the stage at the right-side //
+                            //appear at right
+                            circle.x = canvas.width;
                         }
                         
+                        //Y  Direction  Below//
+                        
                         if ( circle.y > canvas.height + circle.radius ) {
-                            // code to place circle exactly off the stage at the bottom //
+                            //appear at bottom
+                            circle.y = 0;
                         } else if ( circle.y < canvas.height + circle.radius ) {
-                            // your code to place circle exactly off the stage at the top //
+                            //appear at top
+                            circle.y = canvas.height;
                         }
                         
                         // YOUR TODO 6 CODE ENDS HERE //////////////////////////
