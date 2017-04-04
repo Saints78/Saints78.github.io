@@ -64,7 +64,32 @@
             [class=interests] header {
                 font-size: 1.25em;
             }
+            [class = about-me]{
+                padding: 15px;
+                width:370px;
+                height:150px;
+                float:left;
+            }
+            [class=career-goals]{
+                padding: 15px;
+                width:370px;
+                height:150px;
+                float:left;
+                
+            }
         </style>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+         function jQuery (){
+            $('.main').hide();
+            $('.main').fadeIn(1000);
+            $('.about-me').hide();
+            $('.career-goals').hide();
+            $('.about-me').slideToggle(500);
+            $('.career-goals').slideToggle(500);
+            
+        };
+         $(document).ready(jQuery);
+        </script>
     </head>
     <body>
         <div id="all-contents"> 
@@ -92,6 +117,38 @@
                                 <li>Gaming. (Add me on Steam! Its e0nz)</li>
                             </ul>
                             </section>
+                            
+                            <div class ="about-me">
+                                <h2>Who am I?</h2>
+                                <p>If you are reading this, you have stumbled upon a very <strong>top</strong> secret file. 
+                                If you wish to continue, please do so. As you can see, my name is Antonio Alphonse,Jr. but 
+                                most people prefer to call me 'Tony'. I am a boy, no, <strong class = 'man'>man</strong> that currently
+                                is 15. My birthday is November 20, 2001. I do clubs. Clubs are fun. Clubs, clubs, clubs. I am a part of 
+                                the Ben Franklin Robotics Team, Swim Team, Trading Card Club, Anime Club, Mu Alpha Theta, and Ping Pong Club.
+                                You really want to know more? You <i>really really</i> want to know? Well there's e-sports, Ninjas in Pyjamas and
+                                Team Liquid are personally the best. That's really it about be. But who knows, there's probably more.</p>
+                            </div>
+                            <div class = "career-goals">
+                                <h2> My Career Goals</h2>
+                                <p> 
+                                    <ol>
+                                        <li>
+                                    I aspire to create what the normal world calls video games. In the Numurube realm, they call them
+                                the Lizian Pass Torture. OR at least I think they do. Probably not.
+                                        </li>
+                                        <li>
+                                            I also want to professionally game. Or at least as a hobby I can do very often. Without something 
+                                            
+                                        </li>
+                                        <li>
+                                            I want to at least know more than the language that I was born with. It's not really a 
+                                            career goal but it will enhance a goal in the future.
+                                        </li>
+                                    </ol>   
+                                
+                                
+                                </p>
+                            </div>
                     </p>
                 </div>
             </main>
