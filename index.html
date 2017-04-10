@@ -15,7 +15,9 @@
                 font-weight: bold;
                 padding:10px;
             }
-            
+            button:active{
+                content:'Alakazam';
+            }
 
             /* navigation menu */
             nav {
@@ -79,18 +81,29 @@
                 
             }
         </style>
-        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-         function jQuery (){
-            $('.main').hide();
-            $('.main').fadeIn(1000);
+       <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+        <script>
+         $(document).ready(function(){
+            $('main').hide();
+            $('main').fadeIn(1000);
             $('.about-me').hide();
             $('.career-goals').hide();
-            $('.about-me').slideToggle(500);
-            $('.career-goals').slideToggle(500);
+            $(".career-goals-button").click(function(){
+            $(".career-goals").slideDown(500);
+            $(".career-goals-button").text('Hide Career Goals');
+            $(".career-goals").slideToggle(500);
+            });
+            $(".about-me-button").click(function(){
+            $(".about-me").slideDown(500);
+            $(".about-me-button").text('Hide About Me');
+            $(".about-me-button").click(function(){
+                $("about-me").slideToggle(500);
+            })
+            });
             
-        };
-         $(document).ready(jQuery);
-        </script>
+});
+</script>
     </head>
     <body>
         <div id="all-contents"> 
@@ -119,8 +132,10 @@
                             </ul>
                             </section>
                             
+                                                            <button class = "about-me-button">Show About Me</button>
                             <div class ="about-me">
                                 <h3>Who am I?</h3>
+
                                 <p>If you are reading this, you have stumbled upon a very <strong>top</strong> secret file. 
                                 If you wish to continue, please do so. As you can see, my name is Antonio Alphonse,Jr. but 
                                 most people prefer to call me 'Tony'. I am a boy, no, <strong class = 'man'>man</strong> that currently
@@ -129,8 +144,12 @@
                                 You really want to know more? You <i>really really</i> want to know? Well there's e-sports, Ninjas in Pyjamas and
                                 Team Liquid are personally the best. That's really it about be. But who knows, there's probably more.</p>
                             </div>
+                            <button class = "career-goals-button">Show Career Goals</button>
                             <div class = "career-goals">
                                 <h3> My Career Goals</h3>
+                                 
+                                
+                                 
                                 <p> 
                                     <ol>
                                         <li>
