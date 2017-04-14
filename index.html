@@ -89,19 +89,16 @@
             $('main').fadeIn(1000);
             $('.about-me').hide();
             $('.career-goals').hide();
+            //About Me Button
+            $(".about-me-button").click(function(){
+                $(".about-me-button").text('Show/Hide About Me');
+                $(".about-me").slideToggle(500);
+            });
+            //Career Goals Button
             $(".career-goals-button").click(function(){
-            $(".career-goals").slideDown(500);
-            $(".career-goals-button").text('Hide Career Goals');
-            $(".career-goals").slideToggle(500);
+                $(".career-goals-button").text('Show/Hide Career Goals');
+                $(".career-goals").slideToggle(500);
             });
-            $(".about-me-button").click(function(){
-            $(".about-me").slideDown(500);
-            $(".about-me-button").text('Hide About Me');
-            $(".about-me-button").click(function(){
-                $("about-me").slideToggle(500);
-            })
-            });
-            
 });
 </script>
     </head>
@@ -132,7 +129,7 @@
                             </ul>
                             </section>
                             
-                                                            <button class = "about-me-button">Show About Me</button>
+                                                            <button class = "about-me-button">Show/Hide About Me</button>
                             <div class ="about-me">
                                 <h3>Who am I?</h3>
 
@@ -144,7 +141,7 @@
                                 You really want to know more? You <i>really really</i> want to know? Well there's e-sports, Ninjas in Pyjamas and
                                 Team Liquid are personally the best. That's really it about be. But who knows, there's probably more.</p>
                             </div>
-                            <button class = "career-goals-button">Show Career Goals</button>
+                            <button class = "career-goals-button">Show/Hide Career Goals</button>
                             <div class = "career-goals">
                                 <h3> My Career Goals</h3>
                                  
@@ -157,12 +154,13 @@
                                 the Lizian Pass Torture. OR at least I think they do. Probably not.
                                         </li>
                                         <li>
-                                            I also want to professionally game. Or at least as a hobby I can do very often. Without something 
+                                            I also want to professionally game. Or at least as a hobby I can do very often. Have you played Hacknet? It's 6.99 on Steam and its
+                                            <strong><i>GOOD</i></strong>.
                                             
                                         </li>
                                         <li>
                                             I want to at least know more than the language that I was born with. It's not really a 
-                                            career goal but it will enhance a goal in the future.
+                                            career goal but it will enhance a goal in the future. Those goals only time will tell :P.
                                         </li>
                                     </ol>   
                                 
